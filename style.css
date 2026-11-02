@@ -1,0 +1,263 @@
+
+/* Configuração geral */
+* {
+    box-sizing: border-box;
+}
+
+/* Rolagem suave ao clicar no menu */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Aparência geral da página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e293b;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Cores dos títulos principais */
+header h1,
+section h2 {
+    color: #38bdf8;
+}
+
+/* Links do menu */
+nav a {
+    color: #f1f5f9;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+/* Efeito ao passar o mouse nos links */
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Área principal */
+main {
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+/* Seções do site */
+section {
+    padding: 25px 0;
+    border-bottom: 1px solid #334155;
+}
+
+/* Organiza os projetos lado a lado */
+#projetos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Título ocupa toda a largura */
+#projetos h2{
+    grid-column: 1 / -1;
+}
+
+/* Apresentação inicial */
+.inicio {
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Título da apresentação */
+.inicio h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Texto da apresentação */
+.inicio p {
+    font-size: 16px;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+/* Foto de perfil */
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #38bdf8;
+    margin-bottom: 20px;
+}
+
+/* Botão Ver projetos */
+.botao {
+    display: inline-block;
+    background-color: #0284c7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse no botão */
+.botao:hover {
+    background-color: #0369a1;
+    transform: translateY(-3px);
+}
+
+/* Cartões de projetos e experiências */
+.cartao {
+    background-color: #1e293b;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 1px solid #334155;
+
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse nos cartões */
+.cartao:hover {
+    background-color: #263449;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos dos cartões */
+.cartao h3 {
+    color: #7dd3fc;
+}
+
+/* Link de contato */
+#contato a {
+    color: #7dd3fc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse no link de contato */
+#contato a:hover {
+    color: #38bdf8;
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1e293b;
+    padding: 30px 20px;
+    text-align: center;
+    color: #cdb5e1;
+    margin-top: 30px;
+    
+}
+
+/* Link para voltar ao início */
+.voltar-topo{
+    display: inline-block;
+    color: #38bdf8;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: 0,3s;
+}
+
+/* efeito ao passar o mouse */
+.voltar-topo:hover{
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Texto de direitos autorais */
+.copyright{
+    font-size: 13px;
+    color: #94a3b8;
+    margin-top: 15px;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .inicio {
+        padding: 35px 0;
+    }
+
+    #projetos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Organiza os cartões de conhecimento */
+.lista-conhecimentos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Estilo normal de cada cartão */
+.cartao-conhecimento {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.cartao-conhecimento:hover {
+    background-color: #263449;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Nome da tecnologia */
+.cartao-conhecimento h3 {
+    color: #7dd3fc;
+    margin-top: 0;
+}
+
+/* Aparência dos rótulos */
+.status {
+    display: inline-block;
+    background-color: #0c4a6e;
+    color: #bae6fd;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+    .lista-conhecimentos {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Links dos projetos */
+.link-projeto{
+    display: inline-block;
+    color: #38bdf8;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+/* efeito ao passar o mouse */
+.link-projeto:hover {
+    color: white;
+    text-decoration: underline;
+}
